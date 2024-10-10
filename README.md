@@ -1,3 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/QUM0bojo)
-# Project 4 (Spring 2024)
-Check the project pdf for more info
+# Chat Room Project
+
+This project allows for communication between 2 terminals on the same device or 2 terminals on different devices. It is fairly simple to set up. In order for the project to work as intended, terminals must be connected to the same remote server. 
