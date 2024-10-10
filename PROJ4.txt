@@ -1,0 +1,12 @@
+For my implementation of the chat room project, I first began by looking at the ChatServer.java and ChatClient.java files. In ChatServer.java, I followed the comments left by professor Raskind to guide us through the project. I first created a new server output thread and created a new server socket. I then binded the server socket to null. Then, I printed the address and the port respectively. Next, I accepted clients and printed when a new user connects to the server (server-side). Finally, I create a client thread and start it. 
+
+For the chat client, I created a server socket, print writer, two buffered readers, and a client receiver thread to help me in accomplishing the task at hand. I first prompt the user to enter a username and use the buffered reader to relay this data. I then start the client receiver thread. 
+
+I mainly used the client receiver to print out messages. If any of the messages are null then the thread will wait for 100 milliseconds. 
+
+For the server input thread, I manage the printing of messages with the appropriate usernames and add colors to make the chat room more aesthetically pleasing. I achieve this by declaring final strings that allow me change the characters color when printing. In addition to printing out the messages and who sent them, I also print out when a new user has joined the chat, adding to the project’s functionality. The rest of my implementation follows the comments by professor Raskind.
+
+I did have some errors when first implementing. Primarily, the messages would print to the chat server instead of the individual chat clients back and forth. Then, for every other message I would input, the message would print twice on the same screen. However, I was able to fix these problems by adding messages to the connections array list instead of printing them directly using System.out.println().
+
+Finally, for the server output thread, I created an infinite while loop. Within this loop, I set a string equal to null each time and set it equal to the first element in the messages array list. I also broadcasted the message for each connection that was in the connections linkedlist and popped the message. 
+
